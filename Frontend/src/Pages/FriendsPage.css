@@ -1,0 +1,78 @@
+/* Main container */
+.friends-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+}
+
+/* Heading */
+.friends-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Friend item */
+.friend-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.friend-item:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-3px);
+}
+
+/* Avatar */
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  margin-right: 20px;
+}
+
+/* Friend name */
+.friend-item h3 {
+  font-size: 20px;
+  color: #555;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Empty state */
+.friends-section p {
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .friends-section {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .friend-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

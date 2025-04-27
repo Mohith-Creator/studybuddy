@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+.discover-container {
+  padding: 40px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-left: 45px;
+  margin-right: -10px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 16px 12px 44px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.student-card {
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  padding: 20px;
+  width: calc(50% - 12px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.skills span {
+  background-color: #f0f1ff;
+  padding: 6px 12px;
+  margin: 4px 6px 4px 0;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.connect-btn {
+  background-color: #5e3ff3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.profile-btn {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}

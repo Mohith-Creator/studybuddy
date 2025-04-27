@@ -1,0 +1,73 @@
+/* Main chat section */
+.chat-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+}
+
+/* Heading */
+.chat-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Friend item */
+.friend-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on friend item */
+.friend-item:hover {
+  background-color: #fafafa;
+  transform: translateY(-2px);
+}
+
+/* Avatar styling */
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Friend name */
+.friend-item div h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Empty state */
+.chat-section p {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .friend-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .friend-item div h3 {
+    margin-top: 8px;
+  }
+}

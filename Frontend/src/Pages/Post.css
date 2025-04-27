@@ -1,0 +1,172 @@
+/* Apply box-sizing to everything for perfect layout */
+* {
+  box-sizing: border-box;
+}
+
+.post-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 24px;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.post-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background-color: transparent;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Labels */
+.form-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+/* Post Type Grid */
+.post-type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+/* Post Type Button */
+.post-type-button {
+  padding: 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.post-type-button:hover {
+  border-color: #6366f1;
+  background-color: #f0f4ff;
+}
+
+.post-type-button.selected {
+  border-color: #6366f1;
+  background-color: #eef2ff;
+}
+
+/* Post Type Label */
+.post-type-label {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Color Tags */
+.study {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+.guide {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+.collaborator {
+  background-color: #ede9fe;
+  color: #6b21a8;
+}
+.internship {
+  background-color: #ffedd5;
+  color: #9a3412;
+}
+
+/* Inputs and Textarea */
+.input,
+.textarea {
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: vertical;
+  width: 100%;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px #c7d2fe;
+  outline: none;
+}
+
+/* Skills Section */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.remove-skill {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.remove-skill:hover {
+  color: #111827;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #4338ca;
+}

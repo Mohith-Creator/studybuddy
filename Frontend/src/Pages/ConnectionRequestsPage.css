@@ -1,0 +1,115 @@
+/* Main container */
+.requests-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+}
+
+/* Heading */
+.requests-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Request item */
+.request-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Avatar */
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+/* Name and message */
+.request-item > div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.request-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.request-item p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+/* Buttons */
+.request-item > div:last-child {
+  display: flex;
+  gap: 8px;
+}
+
+.request-item button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Accept button */
+.request-item button:first-child {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.request-item button:first-child:hover {
+  background-color: #43a047;
+}
+
+/* Decline button */
+.request-item button:last-child {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.request-item button:last-child:hover {
+  background-color: #e53935;
+}
+
+/* Empty state */
+.requests-section p {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .request-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .request-item > div:last-child {
+    margin-top: 10px;
+  }
+
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
